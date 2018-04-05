@@ -1,4 +1,4 @@
 ---
 
 script:
-  - exit 99
+  - exit 0
