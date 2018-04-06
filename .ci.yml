@@ -5,6 +5,7 @@ script:
   - echo "Print on stderr" >&2
   - cat /proc/cpuinfo > cpuinfo
   - cat /proc/meminfo > meminfo
+  - sudo echo 1
 
 artifacts:
   - cpuinfo
