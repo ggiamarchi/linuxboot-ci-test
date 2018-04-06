@@ -1,10 +1,7 @@
 ---
 
 script:
-  - echo "Print on stdout"
-  - echo "Print on stderr" >&2
-  - cat /proc/cpuinfo > cpuinfo
-  - cat /proc/meminfo > meminfo
+  - ./build.sh
 
 artifacts:
   - cpuinfo
