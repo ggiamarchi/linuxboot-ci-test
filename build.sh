@@ -1,8 +1,12 @@
 #!/bin/bash
 
-set -ex
+set -e
 
-echo "Print on stdout"
-echo "Print on stderr" >&2
-cat /proc/cpuinfo > cpuinfo
-cat /proc/meminfo > meminfo
+echo "Starting"
+
+for i in {1..60} ; do
+    sleep 1
+    echo "$i second(s) elapsed"
+done
+
+echo "Finished"
